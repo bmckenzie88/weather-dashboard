@@ -21,6 +21,7 @@ This app is a dashboard that provides a 5 day forecast for a given city, using t
 ## Usage
 
 To use the app, simply enter a city in the search bar in the upper right hand corner of the screen and press enter. Recent searches are saved in the "recents" dropdown menu located in the middle of the navbar.
+![screenshot of weatherdashboard app](./assets/weatherdashboard.png)
 
 ## License
 
