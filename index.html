@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Weather Dashboard</a>
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Recents
+            </a>
+            <ul
+              class="dropdown-menu"
+              id="recentsList"
+              aria-labelledby="navbarDropdownMenuLink"
+            ></ul>
+          </li>
+        </ul>
+        <form class="d-flex input-group w-auto">
+          <input
+            type="search"
+            class="form-control rounded"
+            id="searchBar"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <button class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <main class="container d-flex">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
+          class="card-img-top"
+          alt="Chicago Skyscrapers"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Today</h5>
+          <p class="card-text" id="today">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
+          class="card-img-top"
+          alt="Chicago Skyscrapers"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Tomorrow</h5>
+          <p class="card-text" id="tomorrow">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
+          class="card-img-top"
+          alt="Chicago Skyscrapers"
+        />
+        <div class="card-body">
+          <h5 class="card-title" id="day3Date">Card title</h5>
+          <p class="card-text" id="day3">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
+          class="card-img-top"
+          alt="Chicago Skyscrapers"
+        />
+        <div class="card-body">
+          <h5 class="card-title" id="day4Date">Card title</h5>
+          <p class="card-text" id="day4">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
+          class="card-img-top"
+          alt="Chicago Skyscrapers"
+        />
+        <div class="card-body">
+          <h5 class="card-title" id="day5Date">Card title</h5>
+          <p class="card-text" id="day5">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+    ></script>
+  </body>
+</html>
