@@ -37,20 +37,20 @@ async function checkTheWeather(city) {
         switch (day.weather[0].main) {
             case 'Clouds':
                 if (day.weather[0].description == 'overcast clouds') {
-                    return 'https://www.photos-public-domain.com/wp-content/uploads/2012/04/fluffy-white-clouds.jpg'
-                } else { return 'https://filipinotimes.net/wp-content/uploads/2017/05/IMG_4867.jpg' }
+                    return 'https://media.giphy.com/media/3o7rc6sa2RvKo8K5EI/giphy.gif'
+                } else { return 'https://media.giphy.com/media/cXie2nnBIgFFhklQOA/giphy.gif' }
             case 'Rain':
-                return 'https://jooinn.com/images/raining-12.jpg'
+                return 'https://media.giphy.com/media/DfdejvFLH9gac/giphy.gif'
             case 'Clear':
-                return 'https://wallpapercave.com/wp/wp3736920.jpg'
+                return 'https://media.giphy.com/media/3o6ozgD5lrJfGZQgiQ/giphy.gif'
             case 'Thunderstorm':
-                return 'https://www.severe-weather.eu/wp-content/gallery/weather-photos/04072017_Adria_Lightning_8b.jpg'
+                return 'https://media.giphy.com/media/JVaGIHrnC4Xi9DBPwr/giphy.gif'
             case 'Snow':
                 return 'https://media.giphy.com/media/KFUx0Rtz7p0HTzbJ7x/giphy.gif'
             case 'Drizzle':
-                return 'https://jooinn.com/images/raining-12.jpg'
+                return 'https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif'
             default:
-                return 'https://placekitten.com'
+                return 'https://place-puppy.com/300x300'
         }
     }
 
