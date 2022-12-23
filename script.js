@@ -7,8 +7,9 @@ const day4Card = document.getElementById("day4");
 const day5Card = document.getElementById("day5");
 
 const dayCards = [todayCard, tomorrowCard, day3Card, day4Card, day5Card];
-
+const dayImages = [todayImage,tomorrowImage,day3Image,day4Image,day5Image]
 let searches = [];
+
 
 const search = document.getElementById("search-addon");
 
@@ -18,6 +19,7 @@ search.addEventListener("click", function search(e) {
   const city = document.getElementById("searchBar").value;
   checkTheWeather(city);
 });
+
 
 async function checkTheWeather(city) {
   const apiURL =
@@ -30,6 +32,27 @@ async function checkTheWeather(city) {
     const data = await fetch(apiURL);
 
     const refinedData = await data.json();
+
+    function getImage(day) {
+        switch (day.weather[0].main) {
+            case 'Clouds':
+                if (day.weather[0].description == 'overcast clouds') {
+                    return 'https://www.photos-public-domain.com/wp-content/uploads/2012/04/fluffy-white-clouds.jpg'
+                } else { return 'https://filipinotimes.net/wp-content/uploads/2017/05/IMG_4867.jpg' }
+            case 'Rain':
+                return 'https://jooinn.com/images/raining-12.jpg'
+            case 'Clear':
+                return 'https://wallpapercave.com/wp/wp3736920.jpg'
+            case 'Thunderstorm':
+                return 'https://www.severe-weather.eu/wp-content/gallery/weather-photos/04072017_Adria_Lightning_8b.jpg'
+            case 'Snow':
+                return 'https://media.giphy.com/media/KFUx0Rtz7p0HTzbJ7x/giphy.gif'
+            case 'Drizzle':
+                return 'https://jooinn.com/images/raining-12.jpg'
+            default:
+                return 'https://placekitten.com'
+        }
+    }
 
     console.log(refinedData);
     //set days
@@ -57,6 +80,8 @@ async function checkTheWeather(city) {
       const temp = days[i].main.temp;
       const humidity = days[i].main.humidity;
       const wind = days[i].wind.speed;
+      const image = getImage(days[i])
+      dayImages[i].setAttribute('src', getImage(days[i]))
 
       console.log(conditions, temp, wind, humidity);
       dayCards[i].innerHTML =
