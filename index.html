@@ -20,10 +20,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Weather Dashboard</title>
   </head>
-  <body>
-    <nav class="navbar navbar-light bg-light">
+  <body class="bg-light">
+    <nav class="navbar navbar-fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Weather Dashboard</a>
         <ul class="navbar-nav">
@@ -61,84 +62,86 @@
         </form>
       </div>
     </nav>
-    <main class="container d-flex">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
-          class="card-img-top"
-          id="todayImage"
-          alt="Chicago Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Today</h5>
-          <p class="card-text" id="today">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+    <main class="container d-flex align-items-center justify-content-center" style="height: 800px;" id="container">
+      <div class="row">
+        <div class="card col-sm-12 m-1" style="width: 15rem">
+          <img
+            src=""
+            class="card-img-top"
+            id="todayImage"
+            alt="Chicago Skyscrapers"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Today</h5>
+            <p class="card-text" id="today">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
-          class="card-img-top"
-          id="tomorrowImage"
-          alt="Chicago Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Tomorrow</h5>
-          <p class="card-text" id="tomorrow">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card col-sm-12 m-1" style="width: 15rem">
+          <img
+            src=""
+            class="card-img-top"
+            id="tomorrowImage"
+            alt="Chicago Skyscrapers"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tomorrow</h5>
+            <p class="card-text" id="tomorrow">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
-          class="card-img-top"
-          id="day3Image"
-          alt="Chicago Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title" id="day3Date">Card title</h5>
-          <p class="card-text" id="day3">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card col-sm-12 m-1" style="width: 15rem">
+          <img
+            src=""
+            class="card-img-top"
+            id="day3Image"
+            alt="image of weather"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="day3Date">Card title</h5>
+            <p class="card-text" id="day3">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
-          class="card-img-top"
-          id="day4Image"
-          alt="Chicago Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title" id="day4Date">Card title</h5>
-          <p class="card-text" id="day4">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card col-sm-12 m-1" style="width: 15rem">
+          <img
+            src=""
+            class="card-img-top"
+            id="day4Image"
+            alt="Chicago Skyscrapers"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="day4Date">Card title</h5>
+            <p class="card-text" id="day4">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp"
-          class="card-img-top"
-          id="day5Image"
-          alt="Chicago Skyscrapers"
-        />
-        <div class="card-body">
-          <h5 class="card-title" id="day5Date">Card title</h5>
-          <p class="card-text" id="day5">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card col-sm-12 m-1" style="width: 15rem">
+          <img
+            src=""
+            class="card-img-top"
+            id="day5Image"
+            alt="Chicago Skyscrapers"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="day5Date">Card title</h5>
+            <p class="card-text" id="day5">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
     <!-- MDB -->
     <script
       type="text/javascript"
